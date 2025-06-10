@@ -21,7 +21,7 @@
 			Console.WriteLine("to dec or hex ?");
 			prompt();
 			ans = Console.ReadLine();
-			//TODO
+			// TODO
 		}
 		else if (ans == "10")
 		{
@@ -29,11 +29,11 @@
 		}
 		else if (ans == "16")
 		{ 
-			//TODO
+			// TODO
 		}
 		else
 		{
-            throw new ArgumentNullException("\e[91mERROR: \e[0mANSWER INVALID");
-        }
+			throw new ArgumentNullException("\e[91mERROR: \e[0mANSWER INVALID");
+		}
 	}
 }
