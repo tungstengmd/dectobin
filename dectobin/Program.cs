@@ -28,26 +28,26 @@ internal class Program
 		var num = Console.ReadLine();
 		Console.WriteLine($"\e[?1049l\e[H{Convert.ToInt32(num, 2).ToString("X")}");
 	}
-	public static void dectohex()
+    public static void hextobin()
+    {
+        Console.Write($"\e[2J\e[Henter a number :3\n");
+        prompt();
+        var num = Console.ReadLine();
+        Console.WriteLine($"\e[?1049l\e[H{Convert.ToString(Convert.ToInt64(num, 16), 2)}");
+    }
+    public static void dectohex()
 	{
 		Console.Write($"\e[2J\e[Henter a number :3\n");
 		prompt();
 		int num = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine($"\e?1049l\e[H{num.ToString("X")}");
-	}
-	public static void hextobin()
-	{
-		Console.Write($"\e[2J\e[Henter a number :3\n");
-		prompt();
-		var num = Console.ReadLine();
-		Console.WriteLine($"\e?1049l\e[H{Convert.ToInt32(num, 2)}");
+		Console.WriteLine($"\e[?1049l\e[H{num.ToString("X")}");
 	}
 	public static void hextodec()
 	{
 		Console.Write($"\e[2J\e[Henter a number :3\n");
 		prompt();
 		var num = Console.ReadLine();
-		Console.WriteLine($"\e?1049l\e[H{Convert.ToInt32(num, 16)}");
+		Console.WriteLine($"\e[?1049l\e[H{Convert.ToInt32(num, 16)}");
 	}
 	public static void Main()
 	{
